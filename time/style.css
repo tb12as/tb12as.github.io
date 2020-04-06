@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 body{
 	color: whitesmoke !important;
 	transition: .5s;
 }
 .tengah{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	position: absolute;
 	top: 50%;
 	left: 50%;
