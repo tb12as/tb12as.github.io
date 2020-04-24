@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body{
+    background: linear-gradient(to right, rgb(0, 155, 160), rgb(0, 48, 48));
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.tengah{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.barang{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barang .anak{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin: 10px;
+    /* transform: translate(0, 1100px); */
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.753);
+    animation: naik 10s infinite;
+}
+
+.barang .anak:nth-child(1){
+    width: 200px;
+    height: 200px;
+    transform: translate(-10%, 1000px);
+    transition: .5s;
+    animation-duration: 5s;
+}
+
+.barang .anak:nth-child(2){
+    width: 310px;
+    height: 310px;
+    transform: translate(-20%, 1000px);
+    transition: .2s;
+    animation-duration: 9s;
+}
+
+.barang .anak:nth-child(3){
+    width: 218px;
+    height: 218px;
+    transform: translate(-30%, 1000px);
+    transition: 3s;
+    animation-duration: 6s;
+}
+
+.barang .anak:nth-child(4){
+    width: 411px;
+    height: 411px;
+    transform: translate(-40%, 1000px);
+    transition: 3.5s;
+    animation-duration: 11s;
+}
+
+.barang .anak:nth-child(5){
+    width: 400px;
+    height: 400px;
+    transform: translate(30%, 1000px);
+    transition: 5s;
+    animation-duration: 13s;
+}
+
+.barang .anak:nth-child(6) {
+    width: 312px;
+    height: 312px;
+    transform: translate(40%, 1000px);
+    transition: 4s;
+    animation-duration: 6s;
+}
+
+.barang .anak:nth-child(7) {
+    width: 414px;
+    height: 414px;
+    transform: translate(50%, 1000px);
+    transition: 3s;
+    animation-duration: 5s;
+}
+
+.barang .anak:nth-child(8) {
+    width: 249px;
+    height: 249px;
+    transform: translate(60%, 1000px);
+    transition: 2s;
+    animation-duration: 4s;
+}
+
+.barang .anak:nth-child(9) {
+    width: 391px;
+    height: 391px;
+    transform: translate(60%, 1000px);
+    transition: 1s;
+    animation-duration: 9s;
+}
+
+.barang .anak:nth-child(10) {
+    width: 401px;
+    height: 401px;
+    transform: translate(70%, 1000px);
+    transition: 2s;
+    animation-duration: 10s;
+}
+
+barang .anak:nth-child(11) {
+    width: 390px;
+    height: 390px;
+    transform: translate(80%, 1000px);
+    transition: 2s;
+    animation-duration: 5s;
+}
+
+barang .anak:nth-child(12) {
+    width: 139px;
+    height: 139px;
+    transform: translate(76%, 1000px);
+    transition: 2s;
+    animation-duration: 7s;
+}
+
+barang .anak:nth-child(13) {
+    width: 89px;
+    height: 89px;
+    transform: translate(-16%, 1000px);
+    transition: 2s;
+    animation-duration: 11s;
+}
+
+barang .anak:nth-child(14) {
+    width: 222px;
+    height: 222px;
+    transform: translate(80%, 1000px);
+    transition: 8s;
+    animation-duration: 8s;
+}
+
+barang .anak:nth-child(15) {
+    width: 96px;
+    height: 96px;
+    transform: translate(35%, 1000px);
+    transition: 2.8s;
+    animation-duration: 6s;
+}
+
+@keyframes naik{
+    0%{
+        transform: translate(0, 1000px);
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(0, -100px);
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(180deg);
+    }
+}
