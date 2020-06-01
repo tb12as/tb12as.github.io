@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+	
+	<div class="aa barang1"></div>
+	<div class="aa barang2"></div>
+	<div class="aa barang3"></div>
+	<div class="aa barang4"></div>
+
+	<div class="container">
+		<div>
+			<p id="hari"></p>
+			<h1 id="jam"></h1>
+		</div>
+	</div>
+	
+	<div class="bl">
+		<p id="greet" class="blurN">Welcome Back, Sir</p>
+		<input type="text" id="ubahNama" autocomplete="off" autofocus="" placeholder="Masukan Nama" style="background: transparent; border: none; font-size: 18px; padding: 5px 10px; width: 100%; color: whitesmoke; display: none;">
+	</div>
+
+	<!-- Jika belum ada nama -->
+	<div class="tengah" style="display: none;">
+		<h2>Masukan nama Anda</h2>
+		<form id="formNama">
+			<input type="text" id="nama" autocomplete="off" autofocus="" style="margin: 20px 0; padding: 10px; width: 100%; background: #2b389070; border: none; outline: none; color: whitesmoke">
+			<button type="submit" style="background: #2b389070; color: whitesmoke; padding: 5px 10px; text-align: center; border: none; border-radius: ">Save</button>
+		</form>
+	</div>
+	
+
+	<div class="bgblur"></div>
+
+	<div class="blur">
+		<button class="btnBlur blurN">Blur Effect</button>
+	</div>
+
+	<div class="reset">
+		<button class="btnReset">Reset</button>
+	</div>
+
+	<script src="asset/jquery.min.js"></script>
+	<script src="asset/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap);
+body, html {
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url('bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	font-family: 'nunito', sans-serief;
+	color: whitesmoke;
+	overflow: hidden;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin-top: -30px;
+	user-select: none;
+}
+	
+.container div{
+	z-index: 100;
+}
+
+#jam{
+	margin: 10px;
+	font-size: 100px;
+	font-weight: 340;
+	transition: .5s;
+	transform: scale(2);
+	visibility: hidden;
+	opacity: 0;
+}
+
+#jam.m{
+	transform: scale(1);
+	visibility: visible;
+	opacity: 1;
+}
+
+#hari{
+	text-align: center;
+	margin: 10px;
+	transition: .5s;
+	transform: translateX(200px);
+	opacity: 0;
+	visibility: hidden;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#hari.i{
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.aa{
+	transition: .5s;
+	border-radius: 10px;
+}
+
+.ab{
+	backdrop-filter: blur(3px);
+}
+
+.barang1{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to left, #2b38904f, transparent);
+	transform: rotate(45deg) translateX(-80%);
+}
+.barang1.m{
+	transform: rotate(45deg) translateX(-50%);	
+}
+
+.barang2{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to left, #2b38904f, transparent);
+	transform: rotate(-45deg) translateX(-80%);
+}
+.barang2.m{
+	transform: rotate(-45deg) translateX(-50%);
+}
+
+.barang3{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to right, #2b38904f, transparent);
+	transform: rotate(-45deg) translateX(80%);
+}
+.barang3.m{
+	transform: rotate(-45deg) translateX(50%);	
+}
+
+.barang4{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to right, #2b38904f, transparent);
+	transform: rotate(45deg) translateX(80%);
+}
+.barang4.m{
+	transform: rotate(45deg) translateX(50%);
+}
+
+
+.bl{
+	position: absolute;
+	top: 0;
+	right: 50%;
+	transition: .5s;
+	transform: translate(50%, -850px);
+	width: 40%;
+	max-width: 350px;
+	min-width: 100px;
+	padding: 10px;
+	line-height: 30px;
+	margin-top: 10px;
+	background: #2b38904f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.bl.muncul{
+	transform: translate(50%, 0);
+}
+.bl::after{
+	transition: .3s;
+	content: 'Ketuk untuk mengubah';
+	padding: 5px;
+	margin-top: 15px;
+	position: absolute;
+	background: #2b38904f;
+	width: 80%;
+	right: 50%;
+	transform: translate(50%, 0);
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	visibility: hidden;
+	opacity: 0;
+	top: -10px;
+}
+.bl:hover::after{
+	visibility: visible;
+	opacity: 1;
+	top: 45px;
+}
+
+#greet{
+	font-size: 20px;
+	transition: .5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	text-transform: capitalize;
+	user-select: none;
+	cursor: text;
+}
+
+#greet.l{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.tengah{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2b38904f;
+	width: 300px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+	.bl #greet{
+		font-size: 15px;
+	}
+	#jam{
+		font-size: 80px;
+	}
+	#hari{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#jam{
+		font-size: 60px;
+	}
+	#hari{
+		font-size: 16px;
+	}
+}
+
+.blur{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 15px 10%;
+	z-index: 2;
+}
+
+.blur .btnBlur{
+	padding: 10px 20px;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #2b38904f;
+	border-radius: 10px;
+	font-size: 15px;
+	transition: .5s;
+}
+
+.blur .btnBlur:hover{
+	background: #2b3890a3;
+}
+
+.blurN{
+	backdrop-filter: blur(7px);
+}
+
+.bgblur{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: .5s;
+}
+
+.reset{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 15px 10%;
+	z-index: 2;
+}
+
+.btnReset{
+	padding: 10px 20px;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #2b38904f;
+	border-radius: 10px;
+	font-size: 15px;
+	transition: .5s;
+}
+
+.btnReset:hover{
+	background: #2b3890a3;
+}
+
+body::after{
+	content: 'Copyright © 2020 Syafiq Afifuddin. All Rights Reserved';
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	font-size: 10px;
+}
