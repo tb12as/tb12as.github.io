@@ -1,0 +1,176 @@
+body{
+	background: #222;
+	font-family: 'nunito';
+}
+
+.container{
+	margin: 40px 10%;
+	position: relative;
+	color: whitesmoke;
+}
+
+.todo{
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+	color: whitesmoke;
+	align-items: center;
+	padding: 5px 5%;
+	border-bottom: 2px solid rgba(225, 225, 225, 0.1);
+	border-radius: 5px;
+}
+
+.todo-right{
+	width: 80%;
+	
+}
+.todo-left{
+	display: flex;
+	justify-content: space-between;
+	marginite
+}
+
+
+
+.btn{
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	margin: 0px 2px;
+	transition: .5s;
+}
+
+.btn:focus{
+	outline: none;
+}
+
+.delete {
+	color: #fff;
+	background-color: #dc35456b;
+	border-color: #dc3545;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+}
+
+.delete:hover {
+	color: #fff;
+	background-color: #c82333;
+	border-color: #bd2130;
+}
+
+.edit {
+	color: #fff;
+	background-color: #28a74547;
+	border-color: #28a745;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 0.2rem;
+	transition: .5s;
+}
+
+.edit:hover {
+	color: #fff;
+	background-color: #218838;
+	border-color: #1e7e34;
+}
+
+.save {
+	color: #fff;
+	background-color: #007bff4a;
+	border-color: #007bff;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 0.2rem;
+}
+
+.save:hover {
+	color: #fff;`
+	background-color: #0069d9;
+	border-color: #0062cc;
+}
+
+.todo input[type=text] {
+	outline: none;
+	background: #444;
+	border: none;
+	padding: 10px 0;
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 10px;
+	width: 80%;
+
+}
+
+.rounded{
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 362px) {
+	.todo input[type=text] {
+		max-width: 150px;
+	}
+
+	/* Bakal crash di 294, 
+	(Lagian hp siapa yang lebih kecil
+	 dari seitu njir) */
+}
+
+@media screen and (max-width: 492px) {
+	.todo-right{
+		font-size: 12.5px;
+	}
+	.edit, .delete{
+		font-size: 12.5px;
+	}
+	.container h1{
+		font-size: 20px;
+	}
+}
+
+#todo:empty::after {
+  content: 'Tidak ada todo';
+  margin: 15px 0 0 0;
+}
+
+#completed:empty::after {
+  content: 'Belum ada todo yang selesai';
+}
+
+#todo::after,
+#completed::after {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.copyright{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	color: whitesmoke;
+	font-size: 12px;
+}
+
+#completed .todo .todo-left .edit{
+	display: none;
+}

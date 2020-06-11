@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Todo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Todo</h1>
+		<div class="todo rounded" style="margin-bottom: 10px; border: none;">
+
+			<input type="text" placeholder="Create a todo...." id="item" autocomplete="off" autosave="">
+			<div class="todo-left">
+				<button type="submit" id="add" class="btn save"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<div id="todo"></div>
+	</div>
+	<div class="container">
+		<h1>Selesai</h1>
+		<div id="completed"></div>
+	</div>
+
+	<div class="copyright">
+		<p>Copyright &copy; 2020 Sys12</p>
+	</div>
+	
+	<script src="js/script.min.js"></script>
+</body>
+</html>
