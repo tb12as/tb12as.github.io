@@ -131,6 +131,83 @@ body{
 }
 .reminder{font-size: 15px;}
 
+#greet{
+	position: relative;
+	padding: 10px;
+}
+
+#greet:hover{
+	cursor: pointer;
+}
+
+#greet::after{
+	content: 'Ketuk untuk mengubah nama';
+	position: absolute;
+	font-size: 14px;
+	text-align: center;
+	top: 0;
+	left: 50%;
+	width: 110%;
+	padding: 10px;
+	transform: translate(-50%, -50%);
+	/* background: #03dac6; */
+	background: transparent;
+	color: black;
+	border-radius: 10px;
+	transition: .3s;
+	opacity: 0;
+	margin-top: -20px;
+	overflow: hidden;
+}
+
+#greet::before{
+	content: '';
+	position: absolute;
+	visibility: hidden;
+	font-size: 14px;
+	text-align: center;
+	top: 0;
+	left: 50%;
+	width: 0;
+	padding: 0;
+	transform: translate(-50%, -50%);
+	background: #03dac6;
+	color: black;
+	border-radius: 10px;
+	transition: .3s;
+	margin-top: -20px;
+	overflow: hidden;
+}
+
+#greet:hover::after{
+	opacity: 1;
+	/* margin-top: -30px; */
+	border-radius: 20px;
+	width: 100%;
+}
+
+#greet:hover::before{
+	visibility: visible;
+	/* margin-top: -30px; */
+	border-radius: 20px;
+	width: 100%;
+	padding: 20px;
+}
+
+.name-input{
+	padding: 10px;
+	background: transparent;
+	border: 2px solid #03dac6;
+	color: whitesmoke;
+	outline: none;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.d-none{
+	display: none;
+}
+
 /* Try to responsive:v */
 @media screen and (max-width: 788px) {
 	body{
