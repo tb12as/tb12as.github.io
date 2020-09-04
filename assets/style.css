@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+	-ms-overflow-style: none; 
+	scrollbar-width: none;  
+	font-family: 'Nunito', sans-serif;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.socialmedia{
+	padding: 10px;
+	font-size: 30px;
+	/* border: 1px solid red; */
+	transition: .5s;
+	border-radius: 20px;
+	margin: 0 40px;
+}
+
+.socialmedia.facebook{
+	color: #3B5998;
+}
+
+.socialmedia.whatsapp{
+	color: #25d366;
+}
+
+.socialmedia.instagram{
+	color:  #E1306C;
+}
+
+.socialmedia.github{
+	color: #333;
+}
+
+/* jumbotron */
+
+.profile{
+	width: 100%;
+	height: 400px;
+	background: url(bg.png);
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.profile-w{
+	transition: .3s;
+	position: relative;
+	background: whitesmoke;
+	padding: 10px;
+	border-radius: 10px;
+	top: 100px;
+}
+
+.profile-img{
+	transition: 1s;
+	opacity: 0.5;
+}
+
+.level{
+	transition: .5s;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(-20px);
+}
+.level-h{
+	text-align: left;
+}
+.level-h:hover{
+	cursor: pointer;
+}
+
+.level-h:hover ~ .level{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+	border-radius: 10px;
+}
+
+.list-skill li{
+	list-style: none;
+}
