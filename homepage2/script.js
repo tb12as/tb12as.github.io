@@ -76,7 +76,11 @@ function time() {
 		document.querySelector('.right').classList.add('m');
 	}, 210 + 100 + 400 + 200);
 	setTimeout(() => {
-		document.querySelector('.btn').classList.add('m');
+		var button = document.querySelectorAll('.btn');
+		button.forEach(e => {
+			e.classList.add('m');
+		});
+
 		var title = document.querySelectorAll('.title');
 		title.forEach(e => {
 			e.classList.add('m');
@@ -133,4 +137,46 @@ ready(() => {
 			hideInput();
 		}
 	});
+
+	const changeFocusBtn = document.querySelector('#changeFocus');
+	const modal = document.querySelector('.modal');
+	const backdrop = document.querySelector('.modal-backdrop');
+	const btnclose = document.querySelector('.btn-close');
+
+	function toggleClass() {
+		modal.classList.toggle('show');
+		backdrop.classList.toggle('show');
+	}
+
+
+	changeFocusBtn.addEventListener('click', function (event) {
+		event.preventDefault();
+		document.getElementById('focusValue').value = (localStorage.getItem('focus') == null || localStorage.getItem('focus') == '' ? '' : localStorage.getItem('focus'));
+		toggleClass();
+	});
+
+	backdrop.onclick = function (event) {
+		event.preventDefault();
+		toggleClass();
+	}
+	btnclose.onclick = function (event) {
+		event.preventDefault();
+		toggleClass();
+	}
+
+	function changeFocusDOM(focus) {
+		if (focus == null || focus == '') {
+			focus = '<i>"Hanya terdapat 2 pilihan untuk jadi yang terbaik, perbaiki diri sendiri, atau hancurkan orang lain."</i><br /> ~Syafiq Afifuddin';
+		}
+		document.querySelector('.focus').innerHTML = focus;
+	}
+
+	document.querySelector('#formFocus').addEventListener('submit', function (event) {
+		event.preventDefault();
+		let val = document.getElementById('focusValue').value;
+		localStorage.setItem('focus', val);
+		toggleClass();
+		changeFocusDOM(localStorage.getItem('focus'));
+	});
+	changeFocusDOM(localStorage.getItem('focus'));
 });

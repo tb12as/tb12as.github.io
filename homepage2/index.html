@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -10,6 +11,7 @@
 	<meta property="og:image" content="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.0-0/p370x247/117036604_1240871416257362_6714510887383620446_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_eui2=AeEoalJwFsGkKAnJyzuVqVEZN7hQDkIhIqc3uFAOQiEipxjId5n9-xnyZMBXNDhAtxBDPKPdODj_07Q0mJuHTk3J&_nc_ohc=Ln495pN4HfUAX8Esf9I&_nc_ht=scontent.fbdj4-1.fna&_nc_tp=6&oh=bf5f37e4780bf7111b34b3ff300f9676&oe=5F5E4950" />
 	<title>Homepage</title>
 </head>
+
 <body>
 
 	<div class="container">
@@ -45,25 +47,40 @@
 		<div class="right">
 			<div class="nav-top">
 				<div class="nav-left">
-					<h3 class="title">Reminder</h3>
+					<h3 class="title">Main Focus</h3>
 				</div>
 				<div class="nav-right">
 
 				</div>
 			</div>
 			<div class="content">
-				<p class="reminder">Classroom, always check your assignment</p>
-				<p class="reminder">Did you forget your 'half of life'?</p>
-				<p class="reminder">Check your personal todo today</p>
-				<p class="reminder">Look around the world, stay safe? For that never off guard</p>
-				<p class="reminder">Have a nice day :)</p>
+				<p class="focus"></p>
 			</div>
 		</div>
 	</div>
 
+	<!-- modal -->
+	<div class="modal pd">
+		<div class="modal-header">
+			<button class="btn-close">&times;</button>
+			<h5 class="modal-title">Ganti Fokus</h5>
+		</div>
+		<form id="formFocus">
+			<div class="modal-body">
+				<textarea type="text" id="focusValue" class="name-input text-left pd" placeholder="Fokus Anda" cols=""
+					rows="10"></textarea>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" style="visibility: hidden;">Batal</button>
+				<button class="btn">Simpan</button>
+			</div>
+		</form>
+	</div>
+	<div class="modal-backdrop"></div>
 	<!-- todo -->
-	<button class="bottom-left btn" id="addReminder">Add Reminder</button>
+	<button class="bottom-left btn" id="changeFocus">Ganti Fokus</button>
 	<script src="script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
+
 </html>

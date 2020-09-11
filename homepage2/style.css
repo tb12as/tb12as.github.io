@@ -121,6 +121,11 @@ body{
 	visibility: hidden;
 	transition: 1s !important;
 }
+
+.btn:hover{
+	cursor: pointer;
+}
+
 .title.m,
 .btn.m{
 	opacity: 1;
@@ -196,7 +201,7 @@ body{
 	text-align: right;
 	margin-top: -30px;
 }
-.reminder{font-size: 15px;}
+.focus{font-size: 15px;}
 
 #greet{
 	position: relative;
@@ -273,6 +278,86 @@ body{
 
 .d-none{
 	display: none;
+}
+
+.modal-backdrop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.78);
+	/* backdrop-filter: blur(3px); */
+	opacity: 0;
+	visibility: hidden;
+	z-index: 21;
+}
+
+.modal-backdrop.show{
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	/* width: 50%; */
+	z-index: 999;
+	background-color: #1b1b1b;
+	border-radius: 10px;
+	/* not show */
+	visibility: hidden;
+	opacity: 0;
+	z-index: 22;
+}
+
+.modal.show{
+	transform: translate(-50%, -50%);
+	visibility: visible;
+	opacity: 1;
+}
+.modal-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-header .modal-title{
+	border-bottom: 2px solid #03dac6;
+	padding-bottom: 10px;
+	width: 100%;
+	text-align-last: center;
+}
+
+.modal-footer{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	color: #03dac6;
+	font-size: 20px;
+	outline: none;
+	padding: 30px;
+	background-color: transparent;
+}
+.btn-close:hover{
+	cursor: pointer;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.pd{
+	padding: 20px 30px;
 }
 
 /* Try to responsive:v */
