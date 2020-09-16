@@ -1,5 +1,6 @@
 $(function() {
 	$('[data-toggle="tooltip"]').tooltip();
+	$('.preloader').fadeOut();
 
 	setTimeout(() => {
 		$('.socialmedia').css('margin', '0 10px');
