@@ -81,8 +81,8 @@ function time() {
 		title.forEach(e => {
 			e.classList.add('m');
 		});
-		document.querySelector('.left').style.transition = '2s';
-		document.querySelector('.right').style.transition = '2s';
+		// document.querySelector('.left').style.transition = '2s';
+		// document.querySelector('.right').style.transition = '2s';
 	}, 210 + 100 + 400 + 400);
 	setTimeout(() => {
 		document.querySelector('.left').style.backdropFilter = 'blur(9px)';
