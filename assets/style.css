@@ -33,6 +33,14 @@ body::-webkit-scrollbar {
 	color: #333;
 }
 
+.socialmedia.telegram{
+	color: #27a7e5;
+}
+
+.socialmedia.youtube{
+	color: #ff0000;
+}
+
 /* jumbotron */
 
 .profile{
