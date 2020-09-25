@@ -61,7 +61,7 @@ body{
 
 .delete {
 	color: #fff;
-	background-color: #dc35456b;
+	background-color: #dc3545;
 	border-color: #dc3545;
 	padding: 0.25rem 0.5rem;
 	font-size: 0.875rem;
@@ -76,7 +76,7 @@ body{
 
 .edit {
 	color: #fff;
-	background-color: #28a74547;
+	background-color: #28a745;
 	border-color: #28a745;
 	padding: 0.25rem 0.5rem;
 	font-size: 0.875rem;
@@ -93,7 +93,7 @@ body{
 
 .save {
 	color: #fff;
-	background-color: #007bff4a;
+	background-color: #1377e2;
 	border-color: #007bff;
 	padding: 0.25rem 0.5rem;
 	font-size: 0.875rem;
@@ -169,6 +169,11 @@ body{
 	bottom: 10px;
 	right: 10px;
 	color: whitesmoke;
+	font-size: 12px;
+}
+.note{
+	color: whitesmoke;
+	opacity: 0.8;
 	font-size: 12px;
 }
 
