@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Kanao Tsuyuri" />
+	<meta property="og:url" content="https://tb12as.github.io/kanao/index.html" />
+	<meta property="og:image" content="https://tb12as.github.io/assets/kanao-tsuyuri.jpg" />
+	<meta property="og:description" content="You've never felt happiness. Felt enjoyment. Felt pain. Felt bitterness. In fact, you're nothing but an empty shell. It's quite comical, it's so stupid. Why were you even born? ~Kanao Tsuyuri to Doma, Chapter 157" />
 	<title>Kanao Tsuyuri</title>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 	<style>
@@ -49,6 +53,22 @@
 			margin-bottom: 20px;
 		}
 
+		.content{
+			position: relative;
+			height: 100vh;
+			padding-bottom: 200%;
+		}
+
+		.bottom{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			margin: 10px;
+			color: whitesmoke;
+			z-index: 11;
+			font-size: 15px;
+		}
+
 		@media screen and (max-width: 425px) {
 			.tengah h1 {
 				font-size: 20px;
@@ -59,23 +79,17 @@
 				font-size: 15px;
 				letter-spacing: 2px;
 			}
+			.bottom{
+				font-size: 12px;
+			}
 		}
 	</style>
 	<script>
-		document.addEventListener('contextmenu', (e) => {
-			e.preventDefault();
-			return false;
-		});
-
-		document.addEventListener('keydown', (e) => {
-			if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 65 || e.keyCode === 80 || e.keyCode === 83 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
-				e.preventDefault();
-				return false;
-			} else {
-				return true;
-			}
-		});
-
+		function noCopy() {
+			// code by sys12
+			document.addEventListener("contextmenu",e=>(e.preventDefault(),!1)),document.addEventListener("keydown",e=>!e.ctrlKey||67!==e.keyCode&&65!==e.keyCode&&80!==e.keyCode&&83!==e.keyCode&&86!==e.keyCode&&85!==e.keyCode&&117!==e.keyCode||(e.preventDefault(),!1)),onselectstart=(e=>(e.preventDefault(),!1));
+		}
+		noCopy();
 	</script>
 </head>
 <body>
@@ -85,6 +99,11 @@
 		<div class="tengah">
 			<h1>The pillar of Flower</h1>
 			<p>Kanao Tsuyuri</p>
+		</div>
+
+		<div class="bottom">
+			<p>You've never felt happiness. Felt enjoyment. Felt pain. Felt bitterness. In fact, you're nothing but an empty shell. It's quite comical, it's so stupid. Why were you even born?</p>
+			<p>~Kanao Tsuyuri to Doma, Chapter 157</p>
 		</div>
 	</div>
 
