@@ -195,9 +195,19 @@
 		    req.responseType = "blob";
 		    req.onreadystatechange = () => {
 		        if (req.readyState === 4 && req.status === 200) {
+		        	var filename = 'file.mp3';
 		            if (typeof window.chrome !== 'undefined') { // hanya work di chrome
 		                var link = window.URL.createObjectURL(req.response);
 		                video.src = link;
+		            } else if (typeof window.navigator.msSaveBlob !== 'undefined') {
+		                // IE version
+		                // var blob = new Blob([req.response], { type: 'application/force-download' });
+		                // window.navigator.msSaveBlob(blob, filename);
+		                alert('Your browser does not support for this');
+		            } else {
+		                // Firefox version
+		                var file = new File([req.response], filename, { type: 'audio/mpeg' });
+		                video.src = URL.createObjectURL(file);
 		            }
 		        }
 		    };
