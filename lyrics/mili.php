@@ -75,7 +75,7 @@ foreach ($duration as $key => $value) {
 	// echo "$min menit $sec detik $mil mili, Total Mili : $totalMili<br>";
 	echo "$totalMili<br>";
 }
-// fun note: entah mengapa bisa di-copy dan past sesuai line di file json
+// fun note: entah mengapa bisa di-copy dan paste sesuai line di file json
 // buat durasi
 
 ?>
