@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kamado Tanjiro</title>
+
+	<meta property="og:title" content="Kamado Tanjiro" />
+	<meta property="og:url" content="https://tb12as.github.io/kamado-tanjiro/index.html" />
+	<meta property="og:image" content="https://tb12as.github.io/assets/kamado-tanjiro.png" />
+	<meta property="og:description" content="The strong should aid and protect the weak. Then, the weak will become strong and they, in turn, will aid and protect those weaker than them. That is the law of nature." />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+
+	<script>
+		document.addEventListener("contextmenu",e=>(e.preventDefault(),!1)),document.addEventListener("keydown",e=>!e.ctrlKey||67!==e.keyCode&&65!==e.keyCode&&80!==e.keyCode&&83!==e.keyCode&&86!==e.keyCode&&85!==e.keyCode&&117!==e.keyCode||(e.preventDefault(),!1)),onselectstart=(e=>(e.preventDefault(),!1));
+	</script>
+
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+
+		body {
+			background: url(../assets/kamado-tanjiro.png);
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			height: 100vh;
+			padding-bottom: 200%;
+			background-size: cover;
+			font-family: 'Cairo', sans-serif;
+		}
+
+		.center {
+			color: whitesmoke;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.center h1 {
+			letter-spacing: 20px;
+		}
+
+		.center p {
+			font-size: 20px;
+			letter-spacing: 8px;
+		}
+
+
+		.footer {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			/*margin: 10px;*/
+			color: whitesmoke;
+			z-index: 11;
+			font-size: 15px;
+			margin: 10px 5%;
+		}
+
+		.content {
+			position: relative;
+			height: 100vh;
+			padding-bottom: 200%;
+		}
+
+		.overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: rgba(0,0,0,0.4);
+		}
+
+		@media screen and (max-width: 425px) {
+			.center h1 {
+				font-size: 20px;
+				letter-spacing: 6px;
+				margin-bottom: 10px;
+			}
+			.center p {
+				font-size: 15px;
+				letter-spacing: 2px;
+			}
+			.footer {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="overlay"></div>
+
+	<div class="content">
+		<div class="center">
+			<h1>竈門 炭治郎</h1>
+			<p>Kamado Tanjiro</p>
+		</div>
+
+		<div class="footer">
+			<p>The strong should aid and protect the weak. Then, the weak will become strong and they, in turn, will aid and protect those weaker than them. That is the law of nature.</p>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
