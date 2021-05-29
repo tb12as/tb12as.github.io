@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let location = window.location.pathname;
   let parts = location.split("/");
-  let path = parts[parts.length - 1];
+  // let path = parts[parts.length - 1];
+  let cursed = parts.includes('cursed');
 
   const baseURL = `https://api.waifu.pics/many/${
-    path == "cursed" ? "n" : ""
+    cursed ? "n" : ""
   }sfw`;
 
   let param = type.value || "waifu";
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let types = "";
 
-  if (path == "cursed") {
+  if (cursed) {
     types = "waifu neko trap blowjob";
   } else {
     types = `waifu neko shinobu megumin bully cuddle cry hug awoo kiss lick pat smug bonk yeet blush smile wave highfive handhold nom bite glomp slap kill happy wink poke dance cringe`;
