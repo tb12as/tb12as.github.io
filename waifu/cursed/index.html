@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Waifu But it Cursed</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/galery.css" />
+
+    <script src="../js/index.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <script src="../js/http.js" defer></script>
+  </head>
+  <body>
+    <nav
+      class="navbar is-light is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <h5 class="has-text-weight-bold">Random Cursed Image / Gif</h5>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!-- <a class="navbar-item active"> Home </a> -->
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> About Author </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://github.com/tb12as"> Github </a>
+              <!-- <a class="navbar-item"> Facebook</a> -->
+              <a class="navbar-item" href="https://www.facebook.com/tsys12"> Facebook </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="select is-rounded">
+        <select name="type" id="type"></select>
+      </div>
+      <ul id="imgs"></ul>
+      <button id="loadMoreBtn" class="button is-primary is-small">
+        Laod More ...
+      </button>
+    </div>
+
+    <div class="modal" id="singleImgModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <p class="image is-full">
+          <img src="" id="singleImg" loading="lazy" alt="" />
+        </p>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>
