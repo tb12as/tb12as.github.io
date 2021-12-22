@@ -1,1 +1,108 @@
-<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Syafiq Afifuddin</title> <link rel="stylesheet" href="assets/style.min.css" /> <script src="assets/used.min.js"></script> </head> <body> <div class="container"> <img src="assets/syafiq2.png" class="mobile-img before-load" alt="" /> <div class="profile"> <h1 id="name" class="before-load">Syafiq Afifuddin</h1> <hr class="devider" /> <h5 class="profession before-load"> <i class="fas fa-user-tie icon"></i>Back-end Developer </h5> <p class="location before-load"> <i class="fas fa-map-marker-check icon"></i>Pontianak, Indonesia </p> <p class="about before-load"> Perkenalkan, saya Syafiq Afifuddin, seorang back-end developer, mulai tertarik dengan pemrograman sejak kelas 2 SMP kemudian memutuskan untuk mendalaminya dengan melanjutkan pendidikan ke SMK jurusan Rekaysa Perangkat Lunak (RPL). Sekarang saya sedang mendalami laravel API dan Vuejs sebagai front-end. </p> <div class="icons"> <a class="link before-load" data-tippy-content="Github" target="blank" href="https://github.com/tb12as/" ><i class="fab fa-github"></i ></a> <a class="link before-load" data-tippy-content="Facebook" target="blank" href="https://www.facebook.com/tsys12" ><i class="fab fa-facebook"></i ></a> <a class="link before-load" data-tippy-content="WhatsApp" target="blank" href="https://wa.link before-load/3e6vgu" ><i class="fab fa-whatsapp"></i ></a> <a class="link before-load" data-tippy-content="Telegram" target="blank" href="https://t.me/rnd_sys12" ><i class="fab fa-telegram"></i ></a> <a class="link before-load" data-tippy-content="Youtube" target="blank" href="https://www.youtube.com/syafiqafifuddin" ><i class="fab fa-youtube"></i ></a> <a class="link before-load" data-tippy-content="Instagram" target="blank" href="https://www.instagram.com/tb12as" ><i class="fab fa-instagram"></i ></a> </div> </div> <div class="photo"> <img id="photo1" class="before-load" src="assets/syafiq.png" alt="" /> </div> </div> <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script> <script src="https://unpkg.com/tippy.js@4"></script> <script> document.addEventListener( "DOMContentLoaded", () => { const links = document.querySelectorAll(".link"); const img = document.querySelector("#photo1"); const about = document.querySelector(".about"); const name = document.querySelector("#name"); const location = document.querySelector(".location"); const mobileImg= document.querySelector(".mobile-img"); const profession = document.querySelector(".profession"); tippy(".link", { placement: "bottom", animation: "scale", duration: 150, }); setTimeout(() => { links.forEach((value, index) => { setTimeout(() => { value.classList.remove("before-load"); }, 200 * index); }); setTimeout(() => { img.classList.remove("before-load"); about.classList.remove("before-load"); name.classList.remove("before-load"); profession.classList.remove("before-load"); location.classList.remove("before-load"); mobileImg.classList.remove("before-load"); }, 300); }, 500); }, false ); </script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Syafiq Afifuddin</title>
+		<link rel="stylesheet" href="assets/style.min.css" />
+		<script src="assets/used.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<img src="assets/syafiq2.jpg" class="mobile-img before-load" alt="" />
+			<div class="profile">
+				<h1 id="name" class="before-load">Syafiq Afifuddin</h1>
+				<hr class="devider" />
+				<h5 class="profession before-load"><i class="fas fa-user-tie icon"></i>Back-end Developer</h5>
+				<p class="location before-load">
+					<i class="fas fa-map-marker-check icon"></i>Pontianak, Indonesia
+				</p>
+				<p class="about before-load">
+					Perkenalkan, saya Syafiq Afifuddin, seorang back-end developer, mulai tertarik dengan
+					pemrograman sejak kelas 2 SMP kemudian memutuskan untuk mendalaminya dengan melanjutkan
+					pendidikan ke SMK jurusan Rekaysa Perangkat Lunak (RPL). Sekarang saya sedang mendalami
+					laravel API dan Vuejs sebagai front-end.
+				</p>
+				<div class="icons">
+					<a
+						class="link before-load"
+						data-tippy-content="Github"
+						target="blank"
+						href="https://github.com/tb12as/"
+						><i class="fab fa-github"></i
+					></a>
+					<a
+						class="link before-load"
+						data-tippy-content="Facebook"
+						target="blank"
+						href="https://www.facebook.com/tsys12"
+						><i class="fab fa-facebook"></i
+					></a>
+					<a
+						class="link before-load"
+						data-tippy-content="WhatsApp"
+						target="blank"
+						href="https://wa.link before-load/3e6vgu"
+						><i class="fab fa-whatsapp"></i
+					></a>
+					<a
+						class="link before-load"
+						data-tippy-content="Telegram"
+						target="blank"
+						href="https://t.me/rnd_sys12"
+						><i class="fab fa-telegram"></i
+					></a>
+					<a
+						class="link before-load"
+						data-tippy-content="Youtube"
+						target="blank"
+						href="https://www.youtube.com/syafiqafifuddin"
+						><i class="fab fa-youtube"></i
+					></a>
+					<a
+						class="link before-load"
+						data-tippy-content="Instagram"
+						target="blank"
+						href="https://www.instagram.com/tb12as"
+						><i class="fab fa-instagram"></i
+					></a>
+				</div>
+			</div>
+			<div class="photo"><img id="photo1" class="before-load" src="assets/syafiq.jpg" alt="" /></div>
+		</div>
+		<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+		<script src="https://unpkg.com/tippy.js@4"></script>
+		<script>
+			document.addEventListener(
+				"DOMContentLoaded",
+				() => {
+					const links = document.querySelectorAll(".link");
+					const img = document.querySelector("#photo1");
+					const about = document.querySelector(".about");
+					const name = document.querySelector("#name");
+					const location = document.querySelector(".location");
+					const mobileImg = document.querySelector(".mobile-img");
+					const profession = document.querySelector(".profession");
+					tippy(".link", { placement: "bottom", animation: "scale", duration: 150 });
+					setTimeout(() => {
+						links.forEach((value, index) => {
+							setTimeout(() => {
+								value.classList.remove("before-load");
+							}, 200 * index);
+						});
+						setTimeout(() => {
+							img.classList.remove("before-load");
+							about.classList.remove("before-load");
+							name.classList.remove("before-load");
+							profession.classList.remove("before-load");
+							location.classList.remove("before-load");
+							mobileImg.classList.remove("before-load");
+						}, 300);
+					}, 500);
+				},
+				false
+			);
+		</script>
+	</body>
+</html>
